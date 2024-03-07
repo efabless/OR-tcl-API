@@ -18,9 +18,9 @@ jobs:
   check-new-features:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Clone OpenROAD
-        run: time git clone --single-branch --depth=1 $OPENROAD_REPO $OPENROAD_DIRECTORY
+        run: /usr/bin/time --verbose git clone --single-branch --depth=1 $OPENROAD_REPO $OPENROAD_DIRECTORY
       - name: Install Apt Packages
         run: sudo apt install -y $(cat $APT_PACKAGES_FILE)
       - name: Install Python Requirements
