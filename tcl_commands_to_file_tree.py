@@ -29,7 +29,7 @@ def get_tcl_files(openroad_directory, output_dir):
 def generate_commands(files_list_file, output_dir):
     tcl_script = "./commands_to_file_tree.tcl"
     cmd = ["tclsh", tcl_script, files_list_file, output_dir]
-    output = subprocess.run(cmd, stdout=subprocess.PIPE, encoding="utf-8")
+    output = subprocess.run(cmd, stdout=subprocess.PIPE, check=True, encoding="utf-8")
     for line in output.stdout.split("\n"):
         print(f"{tcl_script}: {line}")
 
