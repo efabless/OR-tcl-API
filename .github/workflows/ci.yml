@@ -20,7 +20,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Clone OpenROAD
-        run: git clone --single-branch --depth=1 $OPENROAD_REPO $OPENROAD_DIRECTORY
+      - name: Clone OpenROAD
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+        with:
+          depth: 1
+          branch: 'main'
+          owner: 'The-OpenROAD-Project'
+          repository: 'OpenROAD'
       - name: Install Apt Packages
         run: sudo apt install -y $(cat $APT_PACKAGES_FILE)
       - name: Install Python Requirements
