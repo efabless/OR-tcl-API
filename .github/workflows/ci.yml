@@ -20,7 +20,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Clone OpenROAD
-        run: /usr/bin/time --verbose git clone --single-branch --depth=1 $OPENROAD_REPO $OPENROAD_DIRECTORY
+        run: |
+          /usr/bin/time --verbose git clone --single-branch --depth=1 $OPENROAD_REPO $OPENROAD_DIRECTORY
+      - name: Clone OpenROAD Test
+        run: |
+          /usr/bin/time --verbose git clone $OPENROAD_REPO ${OPENROAD_DIRECTORY}-2
       - name: Install Apt Packages
         run: sudo apt install -y $(cat $APT_PACKAGES_FILE)
       - name: Install Python Requirements
