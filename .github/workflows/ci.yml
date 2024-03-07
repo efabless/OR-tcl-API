@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  Check New Features:
+  check-new-features:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
