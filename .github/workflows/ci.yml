@@ -3,7 +3,7 @@ name: Check New Features
 env:
   OPENROAD_REPO: https://github.com/The-OpenROAD-Project/OpenROAD.git
   OPENROAD_DIRECTORY: openroad
-  APT_PACKAGES_FILE: .github/apt-packages.txt
+  APT_PACKAGES_FILE: .github/workflows/apt-packages.txt
 
 on:
   push:
