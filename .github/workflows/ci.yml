@@ -1,4 +1,7 @@
-name: CI
+name: Check New Features
+
+env:
+  OPENROAD_REPO: https://github.com/The-OpenROAD-Project/OpenROAD.git
 
 on:
   push:
@@ -10,9 +13,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  Check New Features:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Clone OpenROAD
+        run: git clone $OPENROAD_REPO
