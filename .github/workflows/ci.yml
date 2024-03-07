@@ -2,6 +2,7 @@ name: Check New Features
 
 env:
   OPENROAD_REPO: https://github.com/The-OpenROAD-Project/OpenROAD.git
+  OPENROAD_DIRECTORY: openroad
 
 on:
   push:
@@ -18,4 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Clone OpenROAD
-        run: git clone $OPENROAD_REPO
+        run: git clone $OPENROAD_REPO $OPENROAD_DIRECTORY
+      - name: Install python requirements
+        run: python3 -m pip install -r requirements.txt
+      - name: Generate Commands
+        run: python3 -m tcl_commands_to_file_tree.py $OPENROAD_DIRECTORY

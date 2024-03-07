@@ -1,8 +1,11 @@
 import os
-from pathlib import Path
 import re
 import subprocess
 import datetime
+
+import click
+
+from pathlib import Path
 
 now = datetime.datetime.now()
 now = now.strftime("%Y-%m-%d")
@@ -27,11 +30,11 @@ def generate_commands(files_list_file, output_dir):
         print(f"{tcl_script}: {line}")
 
 
-def get_output_dir():
-    output_dir = f"commands/{now}_"
+def get_output_dir(openroad_directory):
+    output_dir = f"{now}_"
     output_dir += (
         subprocess.run(
-            "git rev-parse --short HEAD".split(),
+            f"git rev-parse --short HEAD -C {openroad_directory}".split(),
             encoding="utf-8",
             stdout=subprocess.PIPE,
         )
@@ -41,7 +44,14 @@ def get_output_dir():
     return output_dir
 
 
-output_dir = get_output_dir()
-Path(output_dir).mkdir(parents=True, exist_ok=True)
-tcl_files_list = get_tcl_files(output_dir)
-commands_dir = generate_commands(files_list_file=tcl_files_list, output_dir=output_dir)
+@click.command()
+@click.argument("openroad-directory", type=click.Path(exists=True, dir_okay=True))
+def main(openroad_directory):
+    output_dir = get_output_dir(openroad_directory)
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+    tcl_files_list = get_tcl_files(output_dir)
+    generate_commands(files_list_file=tcl_files_list, output_dir=output_dir)
+
+
+if __name__ == "main":
+    main()
