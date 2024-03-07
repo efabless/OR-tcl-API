@@ -2,7 +2,7 @@ name: Check New Features
 
 env:
   OPENROAD_REPO: https://github.com/The-OpenROAD-Project/OpenROAD.git
-  OPENROAD_DIRECTORY: OpenROAD
+  OPENROAD_DIRECTORY: openroad
   APT_PACKAGES_FILE: .github/workflows/apt-packages.txt
 
 on:
@@ -20,12 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Clone OpenROAD
-        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
-        with:
-          depth: 1
-          branch: 'master'
-          owner: 'The-OpenROAD-Project'
-          repository: 'OpenROAD'
+        run: git clone --single-branch --depth=1 $OPENROAD_REPO $OPENROAD_DIRECTORY
       - name: Install Apt Packages
         run: sudo apt install -y $(cat $APT_PACKAGES_FILE)
       - name: Install Python Requirements
