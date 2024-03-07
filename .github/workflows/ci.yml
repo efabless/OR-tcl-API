@@ -2,7 +2,7 @@ name: Check New Features
 
 env:
   OPENROAD_REPO: https://github.com/The-OpenROAD-Project/OpenROAD.git
-  OPENROAD_DIRECTORY: openroad
+  OPENROAD_DIRECTORY: OpenROAD
   APT_PACKAGES_FILE: .github/workflows/apt-packages.txt
 
 on:
@@ -23,7 +23,7 @@ jobs:
         uses: GuillaumeFalourd/clone-github-repo-action@v2.3
         with:
           depth: 1
-          branch: 'main'
+          branch: 'master'
           owner: 'The-OpenROAD-Project'
           repository: 'OpenROAD'
       - name: Install Apt Packages
