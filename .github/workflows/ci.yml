@@ -22,7 +22,7 @@ jobs:
       - name: Clone OpenROAD
         run: git clone $OPENROAD_REPO $OPENROAD_DIRECTORY
       - name: Install Apt Packages
-        run: apt install -y $(cat $APT_PACKAGES_FILE)
+        run: sudo apt install -y $(cat $APT_PACKAGES_FILE)
       - name: Install Python Requirements
         run: python3 -m pip install -r requirements.txt
       - name: Generate Commands
