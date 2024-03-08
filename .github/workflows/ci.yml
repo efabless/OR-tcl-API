@@ -4,6 +4,7 @@ env:
   OPENROAD_REPO: https://github.com/The-OpenROAD-Project/OpenROAD.git
   OPENROAD_DIRECTORY: openroad
   APT_PACKAGES_FILE: .github/workflows/apt-packages.txt
+  OUTPUT_DIRECTORY: ./commands
 
 on:
   push:
@@ -20,14 +21,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Clone OpenROAD
-        run: |
-          /usr/bin/time --verbose git clone --single-branch --depth=1 $OPENROAD_REPO $OPENROAD_DIRECTORY
-      - name: Clone OpenROAD Test
-        run: |
-          /usr/bin/time --verbose git clone $OPENROAD_REPO ${OPENROAD_DIRECTORY}-2
+        run: git clone --single-branch $OPENROAD_REPO $OPENROAD_DIRECTORY
       - name: Install Apt Packages
         run: sudo apt install -y $(cat $APT_PACKAGES_FILE)
       - name: Install Python Requirements
         run: python3 -m pip install -r requirements.txt
       - name: Generate Commands
-        run: python3 tcl_commands_to_file_tree.py $OPENROAD_DIRECTORY
+        run: python3 tcl_commands_to_file_tree.py $OPENROAD_DIRECTORY --output-dir $OUTPUT_DIRECTORY

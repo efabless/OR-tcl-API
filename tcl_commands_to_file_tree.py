@@ -34,10 +34,10 @@ def generate_commands(files_list_file, output_dir):
         print(f"{tcl_script}: {line}")
 
 
-def get_output_dir(openroad_directory):
-    output_dir = f"{now}_"
+def get_hash(openroad_directory):
+    hash = f"{now}_"
     command = f"git -C {openroad_directory} rev-parse --short HEAD"
-    output_dir += (
+    hash += (
         subprocess.run(
             command.split(),
             encoding="utf-8",
@@ -46,13 +46,15 @@ def get_output_dir(openroad_directory):
         .stdout.lstrip()
         .rstrip()
     )
-    return output_dir
+    return hash
 
 
 @click.command()
 @click.argument("openroad-directory", type=click.Path(exists=True, dir_okay=True))
-def main(openroad_directory):
-    output_dir = get_output_dir(openroad_directory)
+@click.option("--output-dir", default=".", type=click.Path(file_okay=False))
+def main(openroad_directory, output_dir):
+    hash = get_hash(openroad_directory)
+    output_dir = os.path.join(output_dir, hash)
     Path(output_dir).mkdir(parents=True, exist_ok=True)
     tcl_files_list = get_tcl_files(openroad_directory, output_dir=output_dir)
     generate_commands(files_list_file=tcl_files_list, output_dir=output_dir)
