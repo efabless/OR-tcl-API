@@ -53,8 +53,6 @@ def get_hash(openroad_directory):
 @click.argument("openroad-directory", type=click.Path(exists=True, dir_okay=True))
 @click.option("--output-dir", default=".", type=click.Path(file_okay=False))
 def main(openroad_directory, output_dir):
-    hash = get_hash(openroad_directory)
-    output_dir = os.path.join(output_dir, hash)
     Path(output_dir).mkdir(parents=True, exist_ok=True)
     tcl_files_list = get_tcl_files(openroad_directory, output_dir=output_dir)
     generate_commands(files_list_file=tcl_files_list, output_dir=output_dir)
