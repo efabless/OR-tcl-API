@@ -1,0 +1,6 @@
+-row row 
+-col col (
+-power|
+-ground|
+-net) net_name 
+-remove

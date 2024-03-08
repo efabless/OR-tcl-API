@@ -1,0 +1,5 @@
+-inst_name inst_name  
+-cell library_cell  
+-origin xy_origin  
+-orient (R0|R90|R180|R270|MX|MY|MXR90|MYR90)  
+-status (PLACED|FIRM)

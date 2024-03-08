@@ -1,0 +1,6 @@
+-net net_list  
+-file file  
+-global_route  
+-detailed_route  
+-verbose
+

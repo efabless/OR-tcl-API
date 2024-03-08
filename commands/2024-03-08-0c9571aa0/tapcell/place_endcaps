@@ -1,0 +1,31 @@
+-
+  # Simplified
+  
+-corner master 
+-edge_corner master 
+  
+-endcap masters  
+  
+-endcap_horizontal masters  
+-endcap_vertical master  
+  
+-prefix prefix
+
+  # Full options
+  
+-left_top_corner master 
+-right_top_corner master 
+-left_bottom_corner master 
+-right_bottom_corner master 
+  
+-left_top_edge master 
+-right_top_edge master 
+-left_bottom_edge master 
+-right_bottom_edge master 
+  
+-left_edge master  
+-right_edge master  
+  
+-top_edge masters  
+-bottom_edge masters
+

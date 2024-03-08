@@ -1,0 +1,3 @@
+-sort 
+-include_pwr_gnd 
+-remove_cells cells filename

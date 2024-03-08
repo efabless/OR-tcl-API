@@ -1,0 +1,15 @@
+-grid grid_name  
+-layer layer_name  
+-width width_value  
+-followpins  
+-extend_to_core_ring  
+-pitch pitch_value  
+-spacing spacing_value  
+-offset offset_value  
+-starts_width (POWER|GROUND)
+                                       
+-extend_to_boundary  
+-snap_to_grid  
+-number_of_straps count  
+-nets list_of_nets
+
