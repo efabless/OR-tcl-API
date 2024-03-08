@@ -19,20 +19,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Clone OpenROAD
-        run: git clone --single-branch $OPENROAD_REPO $OPENROAD_DIRECTORY
+        run: git clone $OPENROAD_REPO $OPENROAD_DIRECTORY
       - name: Install Apt Packages
         run: sudo apt install -y $(cat $APT_PACKAGES_FILE)
       - name: Install Python Requirements
         run: python3 -m pip install -r requirements.txt
       - name: Set Output Directory
-        run: echo "OUTPUT_DIRECTORY=commands/$(time +%F)-$(git -C $OPENROAD_DIRECTORY rev-parse --short HEAD)" >> $GITHUB_ENV
+        run: echo "OUTPUT_DIRECTORY=commands/$(date +%F)-$(git -C $OPENROAD_DIRECTORY rev-parse --short HEAD)" >> $GITHUB_ENV
       - name: Generate Commands
         run: |
           python3 tcl_commands_to_file_tree.py $OPENROAD_DIRECTORY\
             --output-dir $OUTPUT_DIRECTORY
       - name: Push Results
         run: |
-          git add $OUTPUT_DIRECTORY
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "Add $OUTPUT_DIRECTORY"
+          git add $OUTPUT_DIRECTORY && git commit -m "Add $OUTPUT_DIRECTORY"
