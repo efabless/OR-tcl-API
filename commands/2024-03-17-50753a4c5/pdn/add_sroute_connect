@@ -1,0 +1,12 @@
+-net net  
+-outerNet outerNet  
+-layers list_of_2_layers  
+-cut_pitch pitch_value  
+-fixed_vias list_of_vias  
+-max_rows rows  
+-max_columns columns  
+-metalwidths metalwidths  
+-metalspaces metalspaces  
+-ongrid ongrid_layers  
+-insts inst
+

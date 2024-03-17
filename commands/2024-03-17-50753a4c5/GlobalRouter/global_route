@@ -1,0 +1,11 @@
+-guide_file out_file  
+-congestion_iterations iterations  
+-congestion_report_file file_name  
+-congestion_report_iter_step steps  
+-grid_origin origin  
+-critical_nets_percentage percent  
+-allow_congestion  
+-verbose  
+-start_incremental  
+-end_incremental
+

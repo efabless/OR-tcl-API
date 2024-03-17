@@ -1,0 +1,11 @@
+-grid grid_name  
+-layers list_of_2_layers  
+-cut_pitch pitch_value  
+-fixed_vias list_of_vias  
+-dont_use_vias list_of_vias
+                                        
+-max_rows rows  
+-max_columns columns  
+-ongrid ongrid_layers  
+-split_cuts split_cuts_mapping
+

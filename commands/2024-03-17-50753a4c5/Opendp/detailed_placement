@@ -1,0 +1,4 @@
+-  
+-max_displacement disp|{disp_x disp_y}  
+-disallow_one_site_gaps  
+-report_file_name file_name

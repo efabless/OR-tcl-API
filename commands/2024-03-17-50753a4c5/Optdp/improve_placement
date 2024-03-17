@@ -1,0 +1,3 @@
+-random_seed seed 
+-max_displacement disp|{disp_x disp_y} 
+-disallow_one_site_gaps 

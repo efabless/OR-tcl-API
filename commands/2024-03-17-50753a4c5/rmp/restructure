@@ -1,0 +1,9 @@
+-  
+-slack_threshold slack 
+-depth_threshold depth 
+-target area|timing 
+-liberty_file liberty_file 
+-tielo_port tielow_port 
+-tiehi_port tiehigh_port 
+-work_dir workdir_name
+                                    

@@ -1,0 +1,12 @@
+-grid grid_name  
+-layers list_of_2_layer_names  
+-widths (width_value|list_of_width_values)  
+-spacings (spacing_value|list_of_spacing_values)  
+-core_offsets (offset_value|list_of_offset_values)  
+-pad_offsets (offset_value|list_of_offset_values)  
+-add_connect  
+-extend_to_boundary  
+-connect_to_pads  
+-connect_to_pad_layers layers  
+-starts_with (POWER|GROUND)  
+-nets list_of_nets

@@ -1,0 +1,7 @@
+-utilization util 
+-aspect_ratio ratio 
+-core_space space | {bottom top left right} 
+-die_area {lx ly ux uy} 
+-core_area {lx ly ux uy} 
+-additional_sites site_names 
+-site site_name

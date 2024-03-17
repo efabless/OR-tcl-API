@@ -1,0 +1,6 @@
+-
+  
+-iters_between_paintings iters
+  
+-no_pause_mode no_pause_mode # Print solver state every second based on iters_between_paintings
+

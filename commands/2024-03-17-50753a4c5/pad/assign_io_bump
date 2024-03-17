@@ -1,0 +1,3 @@
+-net net  
+-terminal terminal  
+-dont_route  inst
