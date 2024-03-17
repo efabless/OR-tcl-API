@@ -17,12 +17,17 @@ def get_tcl_files(openroad_directory, output_dir):
     print(f"{os.path.basename(__file__)}: Generating {output_file}")
     src_directory = os.path.join(openroad_directory, "src")
     print(f"{os.path.basename(__file__)}: Using {src_directory}")
+    tcl_interface_files = []
     for root, subdir, files in os.walk(src_directory):
         for file in files:
             if re.match(
                 rf"{src_directory}/[A-z]+/src/[A-z]+\.tcl", os.path.join(root, file)
             ):
-                print(os.path.join(root, file), file=output_stream)
+                tcl_interface_files.append(os.path.join(root, file))
+
+    for file in sorted(tcl_interface_files):
+        print(file, file=output_stream)
+    output_stream.close()
     return output_file
 
 
