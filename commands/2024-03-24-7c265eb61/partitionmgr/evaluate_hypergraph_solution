@@ -1,0 +1,14 @@
+-
+  
+-num_parts num_parts  
+-balance_constraint balance_constraint  
+-hypergraph_file hypergraph_file  
+-solution_file solution_file  
+-base_balance base_balance  
+-scale_factor scale_factor  
+-vertex_dimension vertex_dimension  
+-hyperedge_dimension hyperedge_dimension  
+-fixed_file fixed_file  
+-group_file group_file  
+-e_wt_factors e_wt_factors  
+-v_wt_factors v_wt_factors  

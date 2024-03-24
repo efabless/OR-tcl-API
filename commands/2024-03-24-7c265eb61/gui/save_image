@@ -1,0 +1,5 @@
+-area {x0 y0 x1 y1}  
+-width width  
+-resolution microns_per_pixel  
+-display_option option  path
+

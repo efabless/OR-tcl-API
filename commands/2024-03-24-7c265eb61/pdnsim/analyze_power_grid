@@ -1,0 +1,24 @@
+-
+  
+-vsrc vsrc_file 
+  
+-outfile out_file
+  
+-error_file err_file
+  
+-enable_em
+  
+-em_outfile em_out_file
+  
+-net net_name
+  
+-dx bump_pitch_x
+  
+-dy bump_pitch_y
+  
+-node_density val_node_density
+  
+-node_density_factor val_node_density_factor
+  
+-corner corner
+  

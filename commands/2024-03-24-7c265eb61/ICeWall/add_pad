@@ -1,0 +1,11 @@
+-name name  
+-type type  
+-cell library_cell  
+-signal signal_name  
+-edge edge  
+-location location  
+-bump rowcol  
+-padcell_to_rdl list_of_vias  
+-rdl_to_bump list_of_vias  
+-bondpad bondpad  
+-inst_name inst_name

@@ -1,0 +1,12 @@
+-type (flipchip|wirebond)  
+-power power_nets  
+-ground ground_nets  
+-core_area core_area  
+-die_area die_area  
+-offsets offsets  
+-pad_inst_pattern pad_inst_pattern  
+-pad_pin_pattern pad_pin_pattern  
+-pad_pin_layer pin_layer_name  
+-pin_layer layer_name  
+-connect_by_abutment signal_list  
+-allow_filler_overlap
