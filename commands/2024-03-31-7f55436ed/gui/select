@@ -1,0 +1,6 @@
+-type object_type  
+-name name_regex  
+-case_insensitive  
+-highlight group  
+-filter attribute_and_value
+

@@ -1,0 +1,16 @@
+-
+    
+-maze_end_iter iter
+    
+-drc_cost d_cost
+    
+-marker_cost m_cost
+    
+-fixed_shape_cost f_cost
+    
+-marker_decay m_decay
+    
+-ripup_mode mode
+    
+-follow_guide f_guide
+

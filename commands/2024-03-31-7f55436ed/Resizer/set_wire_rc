@@ -1,0 +1,7 @@
+-clock 
+-signal 
+-data 
+-layer layer_name 
+-resistance res 
+-capacitance cap 
+-corner corner
