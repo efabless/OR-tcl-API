@@ -1,0 +1,4 @@
+-max_cap cap  
+-max_slew slew  
+-slew_steps slew_steps  
+-cap_steps cap_steps  

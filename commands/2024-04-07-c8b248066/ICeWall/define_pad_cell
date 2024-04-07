@@ -1,0 +1,12 @@
+-name name  
+-type cell_type|
+-fill|
+-corner|
+-bondpad|
+-bump  
+-cell_name cell_names_per_side  
+-orient orientation_per_side  
+-pad_pin_name pad_pin_name  
+-break_signals signal_list  
+-offset cell_offset  
+-physical_only

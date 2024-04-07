@@ -1,0 +1,12 @@
+-hor_layers h_layers 
+-ver_layers v_layers 
+-random_seed seed 
+-random 
+-corner_avoidance distance 
+-min_distance min_dist 
+-min_distance_in_tracks 
+-exclude region 
+-group_pins pin_list 
+-annealing  
+-write_pin_placement file_name
+

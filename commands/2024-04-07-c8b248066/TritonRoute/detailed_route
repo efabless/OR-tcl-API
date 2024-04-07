@@ -1,0 +1,54 @@
+-
+    
+-output_maze filename
+    
+-output_drc filename
+    
+-output_cmap filename
+    
+-output_guide_coverage filename
+    
+-drc_report_iter_step step
+    
+-db_process_node name
+    
+-disable_via_gen
+    
+-droute_end_iter iter
+    
+-via_in_pin_bottom_layer layer
+    
+-via_in_pin_top_layer layer
+    
+-or_seed seed
+    
+-or_k k
+    
+-bottom_routing_layer layer
+    
+-top_routing_layer layer
+    
+-verbose level
+    
+-distributed
+    
+-remote_host rhost
+    
+-remote_port rport
+    
+-shared_volume vol
+    
+-cloud_size sz
+    
+-clean_patches
+    
+-no_pin_access
+    
+-min_access_points count
+    
+-save_guide_updates
+    
+-repair_pdn_vias layer
+    
+-single_step_dr
+

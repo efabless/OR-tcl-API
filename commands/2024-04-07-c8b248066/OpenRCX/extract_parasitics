@@ -1,0 +1,20 @@
+-
+    
+-ext_model_file filename
+    
+-corner_cnt count
+    
+-max_res ohms
+    
+-coupling_threshold fF
+    
+-debug_net_id id
+    
+-lef_res
+    
+-cc_model track
+    
+-context_depth depth
+    
+-no_merge_via_res
+

@@ -1,0 +1,8 @@
+-skip_trim  
+-dont_add_pins  
+-reset  
+-ripup  
+-report_only  
+-failed_via_report file  
+-verbose
+
