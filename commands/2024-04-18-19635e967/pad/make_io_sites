@@ -1,0 +1,9 @@
+-horizontal_site site  
+-vertical_site site  
+-corner_site site  
+-offset offset  
+-rotation_horizontal rotation  
+-rotation_vertical rotation  
+-rotation_corner rotation  
+-ring_index index
+

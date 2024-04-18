@@ -1,0 +1,3 @@
+-bond master  
+-offset {x y}  
+-rotation rotation  ioinsts

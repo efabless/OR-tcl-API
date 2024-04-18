@@ -1,0 +1,18 @@
+-
+  
+-net net_name
+  
+-corner corner
+  
+-error_file error_file
+  
+-voltage_file voltage_file
+  
+-enable_em
+  
+-em_outfile em_file
+  
+-vsrc voltage_source_file
+  
+-source_type FULL|BUMPS|STRAPS
+
