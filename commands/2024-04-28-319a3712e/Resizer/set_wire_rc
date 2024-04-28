@@ -1,0 +1,12 @@
+-clock 
+-signal 
+-data 
+-layers layers 
+-layer layer 
+-h_resistance h_res 
+-h_capacitance h_cap 
+-v_resistance v_res 
+-v_capacitance v_cap 
+-resistance res 
+-capacitance cap 
+-corner corner

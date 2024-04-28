@@ -1,0 +1,15 @@
+-setup 
+-hold 
+-recover_power percent_of_paths_with_slack 
+-setup_margin setup_margin 
+-hold_margin hold_margin 
+-slack_margin slack_margin 
+-libraries libs 
+-allow_setup_violations 
+-skip_pin_swap 
+-skip_gate_cloning 
+-repair_tns tns_end_percent 
+-max_passes passes 
+-max_buffer_percent buffer_percent 
+-max_utilization util  
+-verbose

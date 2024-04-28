@@ -1,0 +1,6 @@
+- alpha  
+-net net_name  
+-min_fanout fanout  
+-min_hpwl hpwl  
+-clock_nets
+
