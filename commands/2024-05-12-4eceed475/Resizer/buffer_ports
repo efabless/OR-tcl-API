@@ -1,0 +1,4 @@
+-inputs 
+-outputs 
+-max_utilization util 
+-buffer_cell buf_cell

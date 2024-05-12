@@ -1,0 +1,7 @@
+-pin_name pin_name 
+-layer layer 
+-location location 
+-pin_size pin_size 
+-force_to_die_boundary 
+-placed_status
+

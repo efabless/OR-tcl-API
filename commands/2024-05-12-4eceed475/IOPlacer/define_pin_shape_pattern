@@ -1,0 +1,6 @@
+-layer layer  
+-x_step x_step  
+-y_step y_step  
+-region region  
+-size size  
+-pin_keepout dist

@@ -1,0 +1,11 @@
+-
+  
+-net net_name
+  
+-vsrc vsrc_file
+  
+-corner corner
+  
+-source_type FULL|BUMPS|STRAPS
+  spice_file
+  
