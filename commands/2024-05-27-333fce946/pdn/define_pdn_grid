@@ -1,0 +1,18 @@
+-name <name>  
+-macro  
+-existing  
+-grid_over_pg_pins|
+-grid_over_boundary  
+-voltage_domains <list_of_voltage_domains>  
+-orient <list_of_valid_orientations>  
+-instances <list_of_instances>  
+-cells <list_of_cell_names>   
+-default  
+-halo <list_of_halo_values>  
+-pins <list_of_pin_layers>  
+-starts_with (POWER|GROUND)  
+-obstructions <list_of_layers>  
+-power_switch_cell <name>  
+-power_control <signal_name>  
+-power_control_network (STAR|DAISY)
+

@@ -1,0 +1,5 @@
+-verbose  
+-report_violating_nets  
+-report_file report_file  
+-net net
+

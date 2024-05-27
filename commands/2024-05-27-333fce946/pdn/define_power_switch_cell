@@ -1,0 +1,6 @@
+-name <name>  
+-control <control_pin>  
+-acknowledge <acknowledge_pin>  
+-power_switchable <power_switchable_pin>  
+-power <power_pin>  
+-ground <ground_pin> 

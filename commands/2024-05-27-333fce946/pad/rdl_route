@@ -1,0 +1,7 @@
+-layer layer  
+-bump_via access_via  
+-pad_via access_via  
+-width width  
+-spacing spacing  
+-turn_penalty penalty  
+-allow45  nets
