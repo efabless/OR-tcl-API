@@ -1,0 +1,7 @@
+-name name  
+-text item_text  
+-script tcl_script  
+-path menu_path  
+-shortcut key_shortcut  
+-echo
+

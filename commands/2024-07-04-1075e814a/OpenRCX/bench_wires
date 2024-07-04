@@ -1,0 +1,26 @@
+-
+    
+-met_cnt mcnt
+    
+-cnt count
+    
+-len wire_len
+    
+-over
+    
+-diag
+    
+-all
+    
+-db_only
+    
+-under_met layer
+    
+-w_list width
+    
+-s_list space
+    
+-over_dist dist
+    
+-under_dist dist
+

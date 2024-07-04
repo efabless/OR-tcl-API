@@ -1,0 +1,6 @@
+-name domain_name  
+-power power_net_name  
+-ground ground_net_name  
+-region region_name  
+-secondary_power secondary_power_net_name  
+-switched_power switched_power_net_name
