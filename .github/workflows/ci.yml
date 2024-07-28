@@ -40,5 +40,5 @@ jobs:
       - name: Diff
         run: |
           cd commands
-          diff -r --side-by-side --suppress-common-lines $(find . -maxdepth 1 -mindepth 1 -type d -printf "%p\n" | sort -n | tail -n 2) --side-by-side
+          diff -r --side-by-side --suppress-common-lines $(find . -maxdepth 1 -mindepth 1 -type d -printf "%p\n" | sort -n | tail -n 2) --side-by-side || true
 
